@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 import path from 'path';
+import apiRouter from './src/route/api-router';
 dotenv.config();
 const env = process.env;
 const app = express();
@@ -14,9 +15,7 @@ app.get('/', (req,res)=>{
     res.render('home');
 });
 
-app.use('/api',(req, res) => {
-    
-});
+app.use('/api',apiRouter);
 
 app.use((req,res,nex) => {
     res.status(404);
