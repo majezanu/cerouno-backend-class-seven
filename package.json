@@ -1,6 +1,6 @@
 {
   "name": "class_seven",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "This is an backend nodejs application for user login",
   "main": "index.js",
   "scripts": {
