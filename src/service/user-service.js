@@ -1,4 +1,5 @@
 import users from '../model/users';
+import utils from '../utils/utils';
 const getUsers = () => {
     return users;
 };
@@ -15,8 +16,13 @@ const getUsersWithoutPass = () => {
     return usersCopy;
 }
 
-const authorize = (username, password) => {
-
+const canEnter = (username, password) => {
+    let user = getUsers().find(user => user.username === username);
+    return user && utils.matchHash(password, user.password) && user.active;
 }
 
-export default { getUsers, getUsersWithoutPass, authorize };
+const getUSer = (username) => {
+    return getUsers().find(user => user.username === username);
+}
+
+export default { getUsers, getUsersWithoutPass, canEnter, getUSer };
