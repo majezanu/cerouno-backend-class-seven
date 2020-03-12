@@ -1,19 +1,19 @@
 export default [
     {
         username: "majezanu",
-        password: "m4nv3l_j3zvz",
+        password: "$2y$12$rZqe3.CZ5nELK9a4yilRQuIaq/prFIqB23J9pRRx8EU.CQxqxKluK",
         role: 'user',
         active: 1
     },
     {
         username: "zanuma",
-        password: "admin2125",
+        password: "$2y$12$MreRZq9yyKqUanMofFd06ulc4njxjcqyfwW4uq6MTV5VzsNOOvLLW",
         role: 'user',
         active: 0
     },
     {
         username: "admin",
-        password: "admin",
+        password: "$2y$12$OrhvJ74b98ZvB1/1/AvKs.Q6UAp8222ZGcQqzB/INwuvZYstBZuhm",
         role: 'admin',
         active: 1
     }
